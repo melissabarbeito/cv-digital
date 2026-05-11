@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Melissa Angelina Barbeito</title>
+    <style>
+        :root {
+            --primary: #000000;
+            --secondary: #333333;
+            --light-gray: #f4f4f4;
+            --border: #dddddd;
+            --text: #222222;
+            --bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eeeeee;
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg);
+            min-height: 100vh;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            border-bottom: 4px solid var(--primary);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: var(--primary);
+            padding: 12px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+
+        main {
+            padding: 40px 60px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            border-left: 6px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 4px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 3px solid var(--primary);
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            border-bottom: 2px solid var(--primary);
+            text-align: left;
+            padding: 12px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            background: #000;
+            margin-top: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            border: 0;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .contact-item {
+            background: var(--light-gray);
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .contact-item strong {
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: var(--secondary);
+        }
+
+        .form-card {
+            border: 1px solid var(--border);
+            padding: 30px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            background: var(--light-gray);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.8rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <h1>Melissa A. Barbeito</h1>
+            <p>Técnico en Informática</p>
+        </header>
+
+        <nav>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#formacion">Formación</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <main>
+            <section id="sobre-mi">
+                <h2>Presentación Profesional</h2>
+                <div class="profile-container">
+                    <img src="foto.jpg" alt="Melissa Angelina Barbeito" class="profile-img">
+                    <p>
+                        "Estudiante de 17 años en 7mo año de Escuela Técnica. Poseo una alta capacidad de aprendizaje para sistemas de gestión y herramientas digitales."
+                    </p>
+                </div>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Habilidad</th>
+                            <th>Nivel / Detalle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sistemas de Gestión</td>
+                            <td>Alta capacidad de aprendizaje y manejo</td>
+                        </tr>
+                        <tr>
+                            <td>Herramientas Digitales</td>
+                            <td>Manejo avanzado (Office, Software Técnico)</td>
+                        </tr>
+                        <tr>
+                            <td>Redes Sociales</td>
+                            <td>Gestión estratégica y creación de contenido</td>
+                        </tr>
+                        <tr>
+                            <td>Resolución de Problemas</td>
+                            <td>Competencia técnica y lógica aplicada</td>
+                        </tr>
+                        <tr>
+                            <td>Multitasking</td>
+                            <td>Gestión eficiente de múltiples tareas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="formacion">
+                <h2>Formación Académica</h2>
+                <p><strong>Escuela Técnica N° 10 "Martín Miguel de Güemes"</strong> — San Luis, Argentina.</p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/7vbi-OCFZEY" 
+                        title="Tutorial de Informática" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Dirección</strong>
+                        Pancha Hernández, Manzana 86 Casa 87, San Luis, Argentina
+                    </div>
+                    <div class="contact-item">
+                        <strong>Teléfono</strong>
+                        2664 190717
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        meli10barbeito@gmail.com
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <form action="mailto:meli10barbeito@gmail.com" method="post" enctype="text/plain">
+                        <fieldset>
+                            <legend>Enviame un mensaje</legend>
+                            <div class="field">
+                                <label for="nombre">Nombre Completo</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                            </div>
+                            <button type="submit">Enviar Mensaje</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>2026 © MELISSA ANGELINA BARBEITO</p>
+            <p>Técnico en Informática | San Luis, Argentina</p>
+        </footer>
+    </div>
+
+</body>
+</html>
