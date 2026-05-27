@@ -103,21 +103,30 @@
                 <div class="form-card">
                     <form action="mailto:meli10barbeito@gmail.com" method="post" enctype="text/plain">
                         <fieldset>
-                            <legend>Enviame un mensaje</legend>
-                            <div class="field">
-                                <label for="nombre">Nombre Completo</label>
-                                <input type="text" id="nombre" name="nombre" required>
-                            </div>
-                            <div class="field">
-                                <label for="email">Correo Electrónico</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="field">
-                                <label for="mensaje">Mensaje</label>
-                                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-                            </div>
-                            <button type="submit">Enviar Mensaje</button>
-                        </fieldset>
+          <legend>Enviame un mensaje</legend>
+          
+          <div class="field">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" aria-required="true" required>
+          </div>
+          
+          <div class="field">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" aria-required="true" required>
+          </div>
+
+          <div class="field">
+            <label for="telefono">Teléfono de Contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 2664190717">
+          </div>
+          
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" aria-required="true" required></textarea>
+          </div>
+          
+          <button type="submit">Enviar Mensaje</button>
+        </fieldset>
                     </form>
                 </div>
             </section>
